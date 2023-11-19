@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "A": {
+      "type": "object",
+      "properties" : {
+        "A1": {
+          "type": "string"
+        },
+        "A2": {
+          "type": "string"
+        }
+      },
+      "required" : [
+        "A1",
+        "A2"
+      ]
+    },
+    "B": {
+      "type": "object",
+      "properties" : {
+        "B1": {
+          "type": "string"
+        },
+        "B2": {
+          "type": "string"
+        }
+      },
+      "required" : [
+        "B1",
+        "B2"
+      ]
+    }
+  },
+  "required": [
+    "A",
+    "B"
+  ]
+}
