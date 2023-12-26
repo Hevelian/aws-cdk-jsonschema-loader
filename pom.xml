@@ -52,6 +52,7 @@
       <name>GitHub Packages</name>
       <url>https://maven.pkg.github.com/hevelian/aws-cdk-jsonschema-loader</url>
     </repository>
+    <!--
     <repository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
@@ -60,6 +61,7 @@
       <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
+    -->
   </distributionManagement>
 
   <dependencies>
