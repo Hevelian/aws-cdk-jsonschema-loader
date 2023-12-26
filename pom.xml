@@ -5,12 +5,12 @@
 
   <groupId>com.hevelian.awscdkutils</groupId>
   <artifactId>json-schema-loader</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
-    <cdk.version>2.105.0</cdk.version>
+    <cdk.version>2.116.0</cdk.version>
     <junit.version>5.7.1</junit.version>
     <nexus.staging.plugin.version>1.6.7</nexus.staging.plugin.version>
     <maven.gpg.plugin.version>1.5</maven.gpg.plugin.version>
