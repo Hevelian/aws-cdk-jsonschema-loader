@@ -14,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write
 
     steps:
     - uses: actions/checkout@v3
@@ -23,15 +22,15 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+        cache: 'maven'
         server-id: ossrh
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
-    - name: Import GPG Key
-      uses: crazy-max/ghaction-import-gpg@v6.1.0
-      with:
-        gpg_private_key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
-        passphrase: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
+        server-username: OSSRH_USERNAME
+        server-password: OSSRH_TOKEN
+        gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
+        gpg-passphrase: MAVEN_GPG_PASSPHRASE
     - name: Build and Deploy with Maven
       run: mvn clean deploy -Prelease
       env:
-        MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
-        MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
+        OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
+        OSSRH_TOKEN: ${{ secrets.OSSRH_TOKEN }}
+        MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
