@@ -5,7 +5,7 @@
 
   <groupId>com.hevelian.awscdkutils</groupId>
   <artifactId>json-schema-loader</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4-SNAPSHOT</version>
 
   <name>AWS CDK Json schema loader</name>
   <description>AWS CDK utility that supports loading API gateway model schemas from file.</description>
