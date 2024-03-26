@@ -1,4 +1,4 @@
-# This workflow will build a package using Maven and then publish it to the OSS Sonatype repository when a release is created
+# This workflow will build a package using Maven and then publish it to the OSS Sonatype Maven repository when a release is created
 name: Maven Deploy
 
 on:
