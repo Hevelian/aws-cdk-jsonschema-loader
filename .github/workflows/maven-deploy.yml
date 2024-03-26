@@ -11,3 +11,5 @@ on:
 jobs:
   call-reusable-workflow:
     uses: Hevelian/build-tools/.github/workflows/maven-deploy.yml@feature/reusable-workflow
+    with:
+      java-version: '11'
