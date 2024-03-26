@@ -1,5 +1,13 @@
 AWS JSON schema loader is the tool designed to streamline the process of parsing JSON schemas into AWS CDK JSONSchema model.
 
+## Maven
+```
+<dependency>
+    <groupId>com.hevelian.awscdkutils</groupId>
+    <artifactId>json-schema-loader</artifactId>
+    <version>0.0.3</version>
+</dependency>
+```
 ## Example of usage
 
 Initialize the loader:
